@@ -8,7 +8,7 @@
 **Edu-Care** is a modern educational platform built with React and Next.js, designed to provide students with top-class courses, learning resources, and e-commerce integration for educational products.  
 The platform features a clean and responsive UI, interactive course cards, category filters, and user-friendly navigation to enhance the learning experience.
 
-![Edu-Care Screenshot](./screenshot.png) <!-- Replace with your screenshot -->
+<img src="https://github.com/Saif-Uddin0/Edu-Care/blob/main/EduCare.jpg?raw=true" />
 
 ---
 
