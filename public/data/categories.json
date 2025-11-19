@@ -1,0 +1,10 @@
+[
+  { "id": 1, "name": "All Categories", "slug": "all" },
+  { "id": 2, "name": "Business", "slug": "business" },
+  { "id": 3, "name": "Development", "slug": "development" },
+  { "id": 4, "name": "Marketing", "slug": "marketing" },
+  { "id": 5, "name": "Education", "slug": "education" },
+  { "id": 6, "name": "Gaming", "slug": "gaming" },
+  { "id": 7, "name": "Design", "slug": "design" },
+  { "id": 8, "name": "Data Science", "slug": "data-science" }
+]

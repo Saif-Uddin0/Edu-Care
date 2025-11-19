@@ -7,6 +7,7 @@ import StatsSection from "./Home/StateSection";
 import FAQSection from "./Home/FAQSection";
 import InstructorSection from "./Home/InstructorSection";
 import BetterFuture from "./Home/BetterFuture";
+import TopCardSec from "./Home/TopCardSec";
 
 export default function Home() {
   return (
@@ -24,6 +25,9 @@ export default function Home() {
       </div>
       <div>
         <WhyChooseUs></WhyChooseUs>
+      </div>
+      <div>
+        <TopCardSec></TopCardSec>
       </div>
       <div>
         <StatsSection></StatsSection>

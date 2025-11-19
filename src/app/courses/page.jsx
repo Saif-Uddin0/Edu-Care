@@ -1,9 +1,16 @@
 import React from 'react';
+import Banner from './shared/Banner';
+import CardSection from './shared/CardSection';
 
 const page = () => {
     return (
         <div>
-            this is courses page
+            <div>
+                <Banner></Banner>
+            </div>
+            <div>
+                <CardSection></CardSection>
+            </div>
         </div>
     );
 };

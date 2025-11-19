@@ -16,9 +16,11 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
           <Image
             src="/assets/favicon.png"
-            alt="Logo"
+            alt="logo"
             width={40}
             height={40}
+            style={{ width: "auto", height: "auto" }}
+            className="w-10 h-10"
           />
           <h1 className="text-2xl font-bold">
             <span className="text-teal-500">Edu</span>
@@ -82,9 +84,8 @@ const Navbar = () => {
 
       {/* Mobile Dropdown Menu */}
       <div
-        className={`lg:hidden bg-white border-t border-gray-200 transition-maxh duration-300 overflow-hidden ${
-          mobileOpen ? "max-h-[500px]" : "max-h-0"
-        }`}
+        className={`lg:hidden bg-white border-t border-gray-200 transition-maxh duration-300 overflow-hidden ${mobileOpen ? "max-h-[500px]" : "max-h-0"
+          }`}
       >
         <div className="px-4 py-4 space-y-3 text-gray-800 font-medium">
 
