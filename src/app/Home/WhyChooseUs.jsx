@@ -57,7 +57,7 @@ const WhyChooseUs = () => {
         >
             {/* Heading */}
             <motion.div
-                className="container mx-auto  text-center"
+                className="max-w-7xl mx-auto  text-center"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -79,7 +79,7 @@ const WhyChooseUs = () => {
 
             {/* Steps with stagger scroll animation */}
             <motion.div
-                className="container mx-auto mt-16 grid grid-cols-1 md:grid-cols-3 gap-10 px-10"
+                className="max-w-7xl mx-auto mt-16 grid grid-cols-1 md:grid-cols-3 gap-10 px-10"
                 variants={containerVariant}
                 initial="hidden"
                 whileInView="show"

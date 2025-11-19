@@ -32,7 +32,7 @@ export default function BlogCard() {
     );
 
   return (
-    <section className="container mx-auto px-4 sm:px-6 md:px-12 py-16">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-16">
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

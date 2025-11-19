@@ -112,10 +112,10 @@ const FAQSection = () => {
 
         {/* Left Section: Image and Student Avatars */}
         <div className="relative flex-1 flex justify-center lg:justify-start w-full lg:w-auto">
-          {/* ACCURATE CONTAINER SIZE: Use a max-width and defined aspect ratio */}
+          {/* ACCURATE max-w-7xl SIZE: Use a max-width and defined aspect ratio */}
           <div className="relative h-130 w-100  rounded-xl overflow-hidden shadow-xl"> 
             
-            {/* Main image: Set to fill the container (w-full h-full) */}
+            {/* Main image: Set to fill the max-w-7xl (w-full h-full) */}
             <img
               src="/assets/faq-img.png" 
               alt="Student working at a desk"
@@ -138,7 +138,7 @@ const FAQSection = () => {
             Powerful Dashboard And High Performance Framework
           </h2>
 
-          {/* Accordion Container */}
+          {/* Accordion max-w-7xl */}
           <div className="divide-y divide-gray-200 border-t border-gray-200">
             {faqData.map((item, index) => (
               <AccordionItem

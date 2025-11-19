@@ -46,7 +46,7 @@ const InstructorCard = ({ name, title, imageSrc }) => {
       }}
       transition={{ type: "spring", stiffness: 300, damping: 25 }}
     >
-      {/* Image Container */}
+      {/* Image max-w-7xl */}
       <div className="rounded-tr-lg rounded-tl-lg overflow-hidden ">
         <img
           src={imageSrc}
@@ -69,7 +69,7 @@ const InstructorCard = ({ name, title, imageSrc }) => {
 const InstructorSection = () => {
 
   return (
-    <section className="container mx-auto py-15 bg-gradient-to-t from-[#F0FCFF] to-[#D7EBFF] md:py-32">
+    <section className="max-w-7xl mx-auto py-15 bg-gradient-to-t from-[#F0FCFF] to-[#D7EBFF] md:py-32">
       <div className="max-w-6xl  mx-auto px-6 lg:px-8">
         
 

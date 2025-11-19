@@ -17,7 +17,7 @@ const AboutSection = () => {
 
   return (
     <section className="w-full py-20 bg-white">
-      <div className="container mx-auto px-6 lg:px-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto px-6 lg:px-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
         {/* LEFT IMAGES */}
         <div className="relative w-full flex items-center justify-center" data-aos="fade-right">

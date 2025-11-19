@@ -37,7 +37,7 @@ const CategorySection = () => {
         <div className="w-full py-20 bg-[#F2F4F7]">
 
             {/* Heading */}
-            <div className="container mx-auto text-center">
+            <div className="max-w-7xl mx-auto text-center">
 
                 <div className="inline-flex items-center gap-2 border border-teal-300/30 bg-white px-5 py-2 rounded-full">
                     <span className="text-primary font-semibold flex items-center gap-2">

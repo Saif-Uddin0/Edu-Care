@@ -13,7 +13,7 @@ const Footer = () => {
     return (
         <footer className="bg-[#162726] text-white pt-20 pb-10">
             {/* Newsletter */}
-            <div className="container mx-auto px-5 mb-20">
+            <div className="max-w-7xl mx-auto px-5 mb-20">
                 <div className="flex border border-white/20 rounded-2xl p-10  flex-col py-15 items-center gap-6 justify-between">
                     <h2 className="text-3xl flex-wrap font-semibold leading-snug text-center md:text-left">
                         Subscribe Our Newsletter For <br /> <span className="text-center flex justify-center">
@@ -139,7 +139,7 @@ const Footer = () => {
                     ))}
                 </div>
             </div>
-            <div className="border border-white/30 mt-20 container mx-auto h-[1px]"></div>
+            <div className="border border-white/30 mt-20 max-w-7xl mx-auto h-[1px]"></div>
 
             {/* Copyright */}
             <div className="text-center text-white/60 mt-5 ">

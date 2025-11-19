@@ -18,7 +18,7 @@ const featureData = [
 ];
 
 // Framer Motion Variants for a simple staggered entrance effect
-const containerVariants = {
+const CVariants = {
     hidden: { opacity: 0 },
     visible: {
         opacity: 1,
@@ -116,7 +116,7 @@ const BetterFuture = () => {
 
                     {/* Right Side: Content and Feature Cards */}
                     <motion.div
-                        variants={containerVariants}
+                        variants={CVariants}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.2 }}

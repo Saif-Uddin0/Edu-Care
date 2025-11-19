@@ -30,7 +30,7 @@ const statsData = [
 const StatsSection = () => {
   return (
     <section className="p-8 bg-[#07A698] md:p-16 mt-15">
-      <div className="container mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Tailwind Grid: 1 column on mobile, 2 columns on medium, 4 columns on large */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {statsData.map((stat, index) => {

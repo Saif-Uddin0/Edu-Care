@@ -13,36 +13,41 @@ const TopCardSec = () => {
   const [active, setActive] = useState("all");
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    Promise.all([
-      fetch("/data/courses.json").then((res) => res.json()),
-      fetch("/data/categories.json").then((res) => res.json()),
-    ])
-      .then(([courseData, categoryData]) => {
-        setCourses(courseData);
-        setFiltered(courseData.slice(0, 3));
-        setCategories([{ id: 0, name: "All", slug: "all" }, ...categoryData]);
-      })
-      .catch((err) => console.error("Error loading data:", err))
-      .finally(() => setLoading(false));
-  }, []);
+useEffect(() => {
+  Promise.all([
+    fetch("/data/courses.json").then((res) => res.json()),
+    fetch("/data/categories.json").then((res) => res.json()),
+  ])
+    .then(([courseData, categoryData]) => {
+      setCourses(courseData);
+
+      // Initially show all courses, not just 3
+      setFiltered(courseData);
+
+      // Ensure no duplicate "All"
+      const cleanCategories = categoryData.filter((cat) => cat.slug !== "all");
+      setCategories([{ id: 0, name: "All", slug: "all" }, ...cleanCategories]);
+    })
+    .catch((err) => console.error("Error loading data:", err))
+    .finally(() => setLoading(false));
+}, []);
 
   // Filter Courses
-  const handleFilter = (slug) => {
-    setActive(slug);
-    if (slug === "all") {
-      setFiltered(courses.slice(0, 3));
-    } else {
-      const result = courses.filter((item) => item.categorySlug === slug);
-      setFiltered(result);
-    }
-  };
+const handleFilter = (slug) => {
+  setActive(slug);
+  if (slug === "all") {
+    setFiltered(courses); // show all courses
+  } else {
+    const result = courses.filter((item) => item.categorySlug === slug);
+    setFiltered(result);
+  }
+};
 
   if (loading) return <Loader fullScreen />;
 
   return (
     <section className="w-full py-20">
-      <div className="container mx-auto text-center">
+      <div className="max-w-7xl mx-auto text-center">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}

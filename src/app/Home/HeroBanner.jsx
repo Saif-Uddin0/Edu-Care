@@ -16,7 +16,7 @@ const HeroBanner = () => {
 
     return (
         <section className="bg-[#EEF3F7]  relative overflow-hidden">
-            <div className="container mx-auto px-5 py-15 grid grid-cols-1 lg:grid-cols-2 items-center gap-14">
+            <div className="max-w-7xl mx-auto px-5 py-15 grid grid-cols-1 lg:grid-cols-2 items-center gap-14">
 
                 {/* Left Content */}
                 <div data-aos="fade-down" data-aos-delay="100">

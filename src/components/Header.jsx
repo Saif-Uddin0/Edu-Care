@@ -5,7 +5,7 @@ import { FaFacebookF, FaInstagram, FaBehance, FaSkype, FaYoutube } from "react-i
 const Header = () => {
   return (
     <div className="hidden lg:block bg-[#1F2C30] text-white py-2">
-      <div className="container mx-auto flex items-center justify-between py-1 font-medium text-sm">
+      <div className="max-w-7xl mx-auto flex items-center justify-between py-1 font-medium text-sm">
 
         {/* Left Section */}
         <div className="flex items-center gap-8">
