@@ -2,7 +2,7 @@
 
 import React from "react";
 import { HashLoader } from "react-spinners";
-
+// loader
 const Loader = ({ size = 100, color = "#39B8AD", fullScreen = false }) => {
   return (
     <div
