@@ -1,14 +1,25 @@
-import React from "react";
+"use client"
+import React, { useEffect } from "react";
 import { Play } from "lucide-react";
 import { FaPlay } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const HeroBanner = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 900,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
+
     return (
         <section className="bg-[#EEF3F7]  relative overflow-hidden">
             <div className="container mx-auto px-5 py-15 grid grid-cols-1 lg:grid-cols-2 items-center gap-14">
 
                 {/* Left Content */}
-                <div>
+                <div data-aos="fade-down" data-aos-delay="100">
                     {/* Tag */}
                     <div className="inline-flex items-center gap-2 bg-white shadow-sm px-5 py-2 rounded-full text-sm font-medium mb-6">
                         <span className="w-2 h-2 bg-[#07A698] rounded-full"></span>
@@ -40,7 +51,7 @@ const HeroBanner = () => {
                         <div className="flex -space-x-3">
                             <img
                                 src="/assets/hero-author-1.png"
-                                className="w-10 h-10 rounded-full border-2 border-white"
+                                className="w-10 h-10 rounded-full border-2 border-white" 
                             />
                             <img
                                 src="/assets/hero-author-2.png"
@@ -65,7 +76,7 @@ const HeroBanner = () => {
                     <p className="text-xl font-semibold text-gray-800">
                         Explore <span className="text-[#07A698]">1350+</span> Courses within Subject
                     </p>
-                    <div className="pt-4 px-15">
+                    <div className="pt-4 px-15 hidden lg:block">
                         <img src="/assets/hero-shape-2.png" alt="" className="w-15  animate-slide-left-right" />
                     </div>
                 </div>
@@ -75,14 +86,14 @@ const HeroBanner = () => {
                     {/* Main Image */}
                     <div className="rounded-[40px] overflow-hidden shadow-lg relative">
                         <img
-                            src="https://img.freepik.com/premium-photo/middle-school-students-doing-task-class_249974-21736.jpg"
+                            src="https://img.freepik.com/premium-photo/middle-school-students-doing-task-class_249974-21736.jpg" data-aos="fade-left" data-aos-delay="100"
                             alt="Student"
                             className="w-full h-[420px] object-cover"
                         />
                     </div>
 
                     {/* Floating Box */}
-                    <div className="absolute -left-20 top-1/2 -translate-y-1/2 bg-white shadow-xl px-6 py-4 rounded-2xl w-50 animate-slide-left-right">
+                    <div className="absolute -left-20 top-1/2 -translate-y-1/2 bg-white shadow-xl px-6 py-4 rounded-2xl w-50 animate-slide-left-right hidden lg:block">
                         <h2 className="text-3xl font-bold text-[#07A698]">256+</h2>
                         <p className="text-black font-semibold text-sm">CRASHED COURSES</p>
                     </div>
