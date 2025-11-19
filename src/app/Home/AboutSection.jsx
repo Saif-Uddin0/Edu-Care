@@ -29,7 +29,7 @@ const AboutSection = () => {
             <div className="flex flex-col gap-6">
 
               <div className="relative w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] h-[220px] sm:h-[260px] md:h-[300px] lg:h-[340px]">
-                <Image
+                <img
                   src="https://st.depositphotos.com/1594308/1714/i/450/depositphotos_17140195-stock-photo-diligent-pupils.jpg"
                   alt="Student"
                   fill
@@ -49,7 +49,7 @@ const AboutSection = () => {
 
             {/* Second image */}
             <div className="relative w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] h-[260px] sm:h-[300px] md:h-[340px] lg:h-[380px] mt-10">
-              <Image
+              <img
                 src="https://thumbs.dreamstime.com/b/group-school-kids-teacher-classroom-education-elementary-learning-people-concept-talking-47874479.jpg"
                 alt="Classroom"
                 fill
@@ -89,7 +89,7 @@ const AboutSection = () => {
             {/* Stat 1 */}
             <div className="flex items-center gap-4" data-aos="fade-up" data-aos-delay="100">
               <div className="bg-white p-4 rounded-full shadow-sm border">
-                <Image src="/assets/about-1.png" width={40} height={40} alt="Icon" />
+                <img src="/assets/about-1.png" width={40} height={40} alt="Icon" />
               </div>
               <div>
                 <p className="text-3xl font-bold text-[#07A698]">9.5k+</p>
@@ -100,7 +100,7 @@ const AboutSection = () => {
             {/* Stat 2 */}
             <div className="flex items-center gap-4" data-aos="fade-up" data-aos-delay="200">
               <div className="bg-white p-4 rounded-full shadow-sm border">
-                <Image src="/assets/about-2.png" width={40} height={40} alt="Icon" />
+                <img src="/assets/about-2.png" width={40} height={40} alt="Icon" />
               </div>
               <div>
                 <p className="text-3xl font-bold text-[#07A698]">6.7k+</p>

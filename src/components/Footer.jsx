@@ -7,7 +7,7 @@ import {
     FaPinterestP,
     FaYoutube,
 } from "react-icons/fa";
-import Image from "next/image";
+
 
 const Footer = () => {
     return (

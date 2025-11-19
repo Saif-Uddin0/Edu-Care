@@ -72,7 +72,7 @@ export default function BlogCard() {
           >
             {/* Blog Image */}
             <div className="relative w-full h-64 overflow-hidden">
-              <Image
+              <img
                 src={blog.image}
                 alt={blog.title}
                 fill

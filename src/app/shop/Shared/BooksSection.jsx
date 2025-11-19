@@ -27,7 +27,7 @@ export default function BooksSection() {
   // 🔄 SHOW LOADER WHILE FETCHING
   if (loading) {
     return (
-      <div><Loader size={Fullscreen} color="teal"></Loader></div>
+      <div><Loader size={60} color="#0d9488" fullScreen></Loader></div>
     );
   }
 

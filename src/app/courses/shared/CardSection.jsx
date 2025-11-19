@@ -1,8 +1,8 @@
 "use client";
 
 import { Zap } from "lucide-react";
-import React, { useEffect, useState, useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import CourseCard from "./CourseCard";
 import Loader from "@/components/Loader";
 
@@ -10,9 +10,6 @@ const CardSection = () => {
     const [courses, setCourses] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-
-    const sectionRef = useRef(null);
-    const isInView = useInView(sectionRef, { once: true, amount: 0.2 });
 
     useEffect(() => {
         fetch("/data/courses.json")
@@ -37,12 +34,12 @@ const CardSection = () => {
         );
 
     return (
-        <section className="w-full py-20 bg-white" ref={sectionRef}>
+        <section className="w-full py-20">
             <div className="container mx-auto text-center">
-                {/* Header */}
+                {/* Section Header */}
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
-                    animate={isInView ? { opacity: 1, y: 0 } : {}}
+                    animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                     className="inline-flex items-center gap-3 bg-white px-3 py-1 text-xs rounded-full shadow-sm"
                 >
@@ -54,7 +51,7 @@ const CardSection = () => {
 
                 <motion.h1
                     initial={{ opacity: 0, y: 10 }}
-                    animate={isInView ? { opacity: 1, y: 0 } : {}}
+                    animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2, duration: 0.6 }}
                     className="text-xl md:text-2xl lg:text-3xl font-bold text-neutral-800 mt-6 leading-snug"
                 >
@@ -64,13 +61,15 @@ const CardSection = () => {
                 {/* Courses Grid */}
                 <motion.div
                     initial="hidden"
-                    animate={isInView ? "visible" : "hidden"}
+                    animate="visible"
                     variants={{
                         hidden: { opacity: 0, y: 20 },
                         visible: {
                             opacity: 1,
                             y: 0,
-                            transition: { staggerChildren: 0.15 },
+                            transition: {
+                                staggerChildren: 0.1,
+                            },
                         },
                     }}
                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-6 mt-10"
@@ -79,22 +78,16 @@ const CardSection = () => {
                         <motion.div
                             key={course.id}
                             variants={{
-                                hidden: { opacity: 0, y: 40, scale: 0.95 },
-                                visible: { opacity: 1, y: 0, scale: 1 },
+                                hidden: { opacity: 0, y: 30 },
+                                visible: { opacity: 1, y: 0 },
                             }}
                             whileHover={{
                                 scale: 1.05,
-                                rotateX: 4,
-                                rotateY: -4,
-                                boxShadow: "0 12px 25px rgba(0,0,0,0.15)",
+                                boxShadow: "0 10px 25px rgba(0,0,0,0.1)",
                             }}
                             whileTap={{ scale: 0.98 }}
-                            transition={{
-                                type: "spring",
-                                stiffness: 220,
-                                damping: 18,
-                            }}
-                            className="rounded-xl overflow-hidden bg-white shadow-md transition-all duration-300 border border-gray-100 hover:border-teal-400"
+                            transition={{ type: "spring", stiffness: 200, damping: 15 }}
+                            className="rounded-xl overflow-hidden bg-white shadow-md hover:shadow-lg transition-all duration-300"
                         >
                             <CourseCard course={course} />
                         </motion.div>
