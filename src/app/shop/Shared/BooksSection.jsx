@@ -24,14 +24,13 @@ export default function BooksSection() {
       });
   }, []);
 
-  // 🔄 SHOW LOADER WHILE FETCHING
+
   if (loading) {
     return (
       <div><Loader size={60} color="#0d9488" fullScreen></Loader></div>
     );
   }
 
-  // ❌ SHOW ERROR IF FAILED
   if (error) {
     return (
       <p className="text-center text-red-500 font-medium py-10">
@@ -74,4 +73,4 @@ export default function BooksSection() {
 
     </div>
   );
-}
+};
