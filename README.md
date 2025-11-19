@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Edu-Care
 
-## Getting Started
+[Live Demo](https://edu-care-xi.vercel.app/contact)
 
-First, run the development server:
+---
 
+## Project Overview
+**Edu-Care** is a modern educational platform built with React and Next.js, designed to provide students with top-class courses, learning resources, and e-commerce integration for educational products.  
+The platform features a clean and responsive UI, interactive course cards, category filters, and user-friendly navigation to enhance the learning experience.
+
+![Edu-Care Screenshot](./screenshot.png) <!-- Replace with your screenshot -->
+
+---
+
+## Technology Stack
+- **Frontend:** React, Next.js 13 (App Router)  
+- **Styling:** Tailwind CSS  
+- **Animations:** Framer Motion , Axios  
+- **Icons:** Lucide React, React Icons  
+- **Deployment:** Vercel  
+
+---
+
+## Key Features
+- Browse featured courses with category filters  
+- Detailed course pages with description, curriculum, and instructor info  
+- Responsive navigation bar with mobile-friendly dropdown  
+- E-commerce functionality with Add to Cart and Wishlist  
+- Smooth animations using Framer Motion  
+- Fully responsive for desktop and mobile  
+
+---
+
+## Dependencies
+- `react`  
+- `next`  
+- `framer-motion`  
+- `lucide-react`  
+- `react-icons`  
+- `tailwindcss`  
+- `postcss`  
+- `autoprefixer`  
+
+---
+
+## Installation Guide (Run Locally)
+1. **Clone the repository:**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone https://github.com/Saif-Uddin0/Edu-Care.git
+cd Edu-Care
